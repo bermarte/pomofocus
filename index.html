@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf8" />
-    <title>your project name</title>
 
-    <link href="./public/style.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>PomoFocus clone</title>
 
-  <body>
-    <div id="user-interface"></div>
+  <link href="./public/style.css" rel="stylesheet" />
+</head>
 
-    <!-- initialize your application -->
-    <script type="module" src="./src/init/index.js"></script>
+<body>
+  <div id="user-interface">
+    <div id="header">
+      <p id="pomofocus"><span class="span-img" id="span-img-pomofocus"></span>Pomofocus</p>
+      <div id="btn-container">
+        <button class="btn"><span class="span-img" id="span-img-report"></span> Report</button>
+        <button class="btn"><span class="span-img" id="span-img-settings"></span>Settings</button>
+        <button class="btn"><span class="span-img" id="span-img-login"></span>Login</button>
+      </div>
+    </div>
+    <!-- main square -->
+    <div id="label-container">
+      <div id="label">
+        <div id="label-header">
+          <button class="label-btn" id="label-btn-pomodoro">Pomodoro</button>
+          <button class="label-btn" id="label-btn-short">Short Break</button>
+          <button class="label-btn" id="label-btn-long">Long Break</button>
+        </div>
+        <div id="hour">
+          25:00
+        </div>
+        <div id="btn-start-container">
+          <button id="start">START</button>
+        </div>
+      </div>
+    </div>
+    <!-- time to work -->
+    <div id="time-to-work">
+      <div id="time-to-work-text">
+        Time to Work!
+      </div>
+    </div>
+    <!-- tasks -->
+    <div id="tasks-container">
+      <div id="tasks-header">
+        <p>Tasks</p>
+        <div id="btn-task"></div>
+      </div>
+      <div id="add-task-container">
+        <div id="add-task-sub-container">
+          <div id="add-task">
+            <span class="span-img" id="span-img-add-task"></span>
+            <p>Add Task</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <!-- load the review buttons for your live deployment  -->
-    <script type="module" src="./lib/review-buttons.js"></script>
-  </body>
+  </div>
+  <!-- initialize your application -->
+  <script type="module" src="./src/init/index.js"></script>
+
+  <!-- load the review buttons for your live deployment  -->
+  <script type="module" src="./lib/review-buttons.js"></script>
+</body>
+
 </html>

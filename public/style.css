@@ -1,0 +1,187 @@
+@font-face {
+    font-family: WolfSansRegular;
+    src: url('./Wolf-Sans-Regular/Wolf\ Sans\ Regular.ttf');
+}
+body {
+    background-color: #DB524D;
+    color: white;
+}
+#user-interface {
+    padding: 0px 12px;
+    max-width: 620px;
+    margin: auto;
+}
+#header {
+    display: flex;
+    height: 36px;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    border-bottom: 1px solid #C54A45;
+}
+#pomofocus {
+    font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+}
+.btn {
+    background-color: #DF645F;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 8px 12px;
+    color: white;
+    opacity: 0.8;
+}
+.btn:hover{
+    opacity: 1;
+}
+#btn-container{
+    display: flex;
+}
+.btn{
+    display: flex;
+}
+.span-img{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-right: 4px;
+}
+
+#span-img-pomofocus{
+    background-image: url('./imgs/icon-white.png');
+}
+#span-img-report{
+    background-image: url('./imgs/graph-white.png');
+}
+#span-img-settings{
+    background-image: url('./imgs/config-white.png');
+}
+#span-img-login{
+    background-image: url('./imgs/user-white.png');
+}
+.label-btn:hover,
+.btn:hover{
+    cursor: pointer;
+}
+.label-btn{
+    background-color: #DF645F;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+/* label */
+#label-container{   
+    display: flex;
+    justify-content: center;
+}
+#label{
+    margin: 12px;
+    padding: 20px 80px 26px;/* top - right and left bottom */
+    background-color: #DF645F;
+    border-radius: 12px;
+}
+#hour{
+    padding-top: 40px;
+    height: 200px;
+    font-size: 120px;
+    font-family: WolfSansRegular;
+}
+#btn-start-container{
+    display: flex;
+    justify-content: center;
+}
+#start{
+    background-color: #FFFFFF;
+    border: none;
+    color: #DB524D;
+    padding: 18px 76px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 22px;
+    -webkit-box-shadow: inset 0px -9px 0px -1px #EBEBEB;
+    -moz-box-shadow: inset 0px -9px 0px -1px #EBEBEB;
+    box-shadow: inset 0px -9px 0px -1px  #EBEBEB;
+}
+#start:hover{
+    cursor: pointer;
+}
+/* time to work */
+#time-to-work{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px; 
+}
+/* tasks */
+#tasks-header{
+    display: flex;
+    padding: 0px 80px 4px;
+    justify-content: space-between;
+    align-items: center;
+}
+#tasks-header p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+#btn-task{
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    background-image: url('./imgs/threedots-white.png');
+    background-repeat: no-repeat;
+    background-size: 47%;
+    background-position:center center;
+    background-color: #DF645F;
+    border-radius: 6px;
+}
+#btn-task:hover{
+    cursor: pointer;
+}
+#add-task-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#add-task-sub-container{
+    border-top: 1px solid white;
+}
+#span-img-add-task{
+    background-image: url('./imgs/plus-circle-white.png');   
+}
+#add-task{
+    margin-top: 18px;
+    padding: 0px 187px 0px;
+    opacity: 0.5;
+    background-color: #C54A45;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    border-width: 2px;
+    border-style: dashed;
+    display: flex;
+    align-items: center;
+}
+#add-task:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
