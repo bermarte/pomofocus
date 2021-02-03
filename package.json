@@ -1,0 +1,28 @@
+{
+  "name": "js-quiz-starter",
+  "version": "1.0.0",
+  "scripts": {
+    "document": "node ./lib/document.js",
+    "test": "node ./lib/test.js",
+    "test-ci": "node ./lib/test.js CI"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackyourfuturebelgium/js-quiz-starter.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hackyourfuturebelgium/js-quiz-starter/issues"
+  },
+  "homepage": "https://github.com/hackyourfuturebelgium/js-quiz-starter",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^6.0.1",
+    "prettier": "^2.2.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "jsdom": "^16.4.0",
+    "@actions/core": "^1.2.6"
+  }
+}

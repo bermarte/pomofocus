@@ -1,0 +1,43 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: merge-changes
+
+on:
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  document-and-test:
+    runs-on: ubuntu-18.04
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: npm install
+      - uses: stefanzweifel/git-auto-commit-action@v4.7.2
+        with:
+          commit_message: installing
+          branch: ${{ github.head_ref }}
+
+      - run: npm run document
+      - uses: stefanzweifel/git-auto-commit-action@v4.7.2
+        with:
+          commit_message: documenting
+          branch: ${{ github.head_ref }}
+
+      - run: npm run test-ci
+        env:
+          CI: true
+      - uses: stefanzweifel/git-auto-commit-action@v4.7.2
+        with:
+          commit_message: testing
+          branch: ${{ github.head_ref }}
