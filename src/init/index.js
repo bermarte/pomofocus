@@ -13,3 +13,4 @@ import '../listeners/longBreak.js';
 document.querySelector('#label-btn-pomodoro').style.backgroundColor = "#DF645F";
 document.querySelector('#label-btn-short').style.backgroundColor = "#DF645F";
 document.querySelector('#label-btn-long').style.backgroundColor = "#DF645F";
+

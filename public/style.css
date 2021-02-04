@@ -1,24 +1,48 @@
+:root {
+    /** pomodoro red **/
+    --color-background-pom: #DB524D;
+    --color-light-pom: #DF645F;
+    --color-dark-pom: #C54A45;
+
+    /** short green **/
+    --color-background-short: #468E91;
+    --color-light-short: #599A9C;
+    --color-dark-short: #3F8082;
+
+    /** long blue **/
+    --color-background-long: #437EA8;
+    --color-light-long: #568BB1;
+    --color-dark-long: #3D739A;
+}
+
 @font-face {
     font-family: WolfSansRegular;
     src: url('./Wolf-Sans-Regular/Wolf\ Sans\ Regular.ttf');
 }
+
 body {
-    background-color: #DB524D;
+    background-color: var(--color-background-pom);
+    /*#DB524D;*/
     color: white;
 }
+
 #user-interface {
     padding: 0px 12px;
     max-width: 620px;
     margin: auto;
 }
+
 #header {
     display: flex;
     height: 36px;
     justify-content: space-between;
     padding-bottom: 14px;
     padding-top: 14px;
-    border-bottom: 1px solid #C54A45;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--color-dark-pom);
+    /*#C54A45;*/
 }
+
 #pomofocus {
     font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 20px;
@@ -27,8 +51,10 @@ body {
     display: flex;
     align-items: center;
 }
+
 .btn {
-    background-color: #DF645F;
+    background-color: var(--color-light-pom);
+    /*#DF645F;*/
     border: none;
     text-align: center;
     text-decoration: none;
@@ -41,72 +67,91 @@ body {
     color: white;
     opacity: 0.8;
 }
-.btn:hover{
+
+.btn:hover {
     opacity: 1;
 }
-#btn-container{
+
+#btn-container {
     display: flex;
 }
-.btn{
+
+.btn {
     display: flex;
 }
-.span-img{
+
+.span-img {
     width: 20px;
     height: 20px;
     display: block;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     margin-right: 4px;
 }
 
-#span-img-pomofocus{
+#span-img-pomofocus {
     background-image: url('./imgs/icon-white.png');
 }
-#span-img-report{
+
+#span-img-report {
     background-image: url('./imgs/graph-white.png');
 }
-#span-img-settings{
+
+#span-img-settings {
     background-image: url('./imgs/config-white.png');
 }
-#span-img-login{
+
+#span-img-login {
     background-image: url('./imgs/user-white.png');
 }
+
 .label-btn:hover,
-.btn:hover{
+.btn:hover {
     cursor: pointer;
 }
-.label-btn{
-    background-color: #DF645F;
+
+.label-btn {
+    background-color: var(--color-light-pom);
+    /*#DF645F;*/
     border: none;
     color: white;
     font-size: 16px;
     padding: 4px 10px;
 }
+
 /* label */
-#label-container{   
+#label-container {
     display: flex;
     justify-content: center;
 }
-#label{
+
+/* horizontal ruler */
+#label {
     margin: 12px;
-    padding: 20px 80px 26px;/* top - right and left bottom */
-    background-color: #DF645F;
+    padding: 20px 80px 26px;
+    /* top - right and left bottom */
+    background-color: var(--color-light-pom);
+    /* #DF645F;*/
     border-radius: 12px;
 }
-#hour{
+
+#hour {
     padding-top: 40px;
     height: 200px;
     font-size: 120px;
     font-family: WolfSansRegular;
 }
-#btn-start-container{
+
+#btn-start-container {
     display: flex;
     justify-content: center;
 }
-#start{
+
+#start {
     background-color: #FFFFFF;
     border: none;
-    color: #DB524D;
+    color: var(--color-background-pom);
+    /*#DB524D;*/
     padding: 18px 76px;
     text-align: center;
     text-decoration: none;
@@ -116,63 +161,75 @@ body {
     font-size: 22px;
     -webkit-box-shadow: inset 0px -9px 0px -1px #EBEBEB;
     -moz-box-shadow: inset 0px -9px 0px -1px #EBEBEB;
-    box-shadow: inset 0px -9px 0px -1px  #EBEBEB;
+    box-shadow: inset 0px -9px 0px -1px #EBEBEB;
 }
-#start:hover{
+
+#start:hover {
     cursor: pointer;
 }
+
 /* time to work */
-#time-to-work{
+#time-to-work {
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
     font-weight: 400;
-    font-size: 18px; 
+    font-size: 18px;
 }
+
 /* tasks */
-#tasks-header{
+#tasks-header {
     display: flex;
     padding: 0px 80px 4px;
     justify-content: space-between;
     align-items: center;
 }
-#tasks-header p{
+
+#tasks-header p {
     font-family: sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
-#btn-task{
+
+#btn-task {
     width: 24px;
     height: 24px;
     padding: 6px;
     background-image: url('./imgs/threedots-white.png');
     background-repeat: no-repeat;
     background-size: 47%;
-    background-position:center center;
-    background-color: #DF645F;
+    background-position: center center;
+    background-color: var(--color-light-pom);
+    /*#DF645F;*/
     border-radius: 6px;
 }
-#btn-task:hover{
+
+#btn-task:hover {
     cursor: pointer;
 }
-#add-task-container{
+
+#add-task-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#add-task-sub-container{
+
+#add-task-sub-container {
     border-top: 1px solid white;
 }
-#span-img-add-task{
-    background-image: url('./imgs/plus-circle-white.png');   
+
+#span-img-add-task {
+    background-image: url('./imgs/plus-circle-white.png');
 }
-#add-task{
+
+#add-task {
     margin-top: 18px;
     padding: 0px 187px 0px;
     opacity: 0.5;
-    background-color: #C54A45;
+    background-color: var(--color-dark-pom);
+    /*#C54A45;*/
     font-family: sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -182,7 +239,65 @@ body {
     display: flex;
     align-items: center;
 }
-#add-task:hover{
+
+#add-task:hover {
     cursor: pointer;
     opacity: 0.7;
+}
+
+/*
+transitions-animations 
+keyframe 0 is assigned in assignColor(col)
+*/
+
+/* green - short */
+
+@keyframes trans-to-green-back {
+    100% {background-color: var(--color-background-short);}
+}
+@keyframes trans-to-green-light-short-back {
+    100% {background-color: var(--color-light-short);}
+}
+@keyframes trans-to-green-short-color-back {
+    100% {color: var(--color-light-short); }
+}
+@keyframes trans-to-green-light-short {
+    100% { border-bottom-color: var(--color-light-short);}
+}
+@keyframes trans-to-green-dark-short {
+    100% {background-color: var(--color-dark-short);}
+}
+
+/* red - pomodoro */
+@keyframes trans-to-red-back {
+    100% {background-color: var(--color-background-pom);}
+}
+@keyframes trans-to-red-light-short-back {
+    100% {background-color: var(--color-light-pom);}
+}
+@keyframes trans-to-red-short-color-back {
+    100% {color: var(--color-light-pom); }
+}
+@keyframes trans-to-red-light-short {
+    100% { border-bottom-color: var(--color-light-pom);}
+}
+@keyframes trans-to-red-dark-short {
+    100% {background-color: var(--color-dark-pom);}
+}
+
+/* blue long */
+@keyframes trans-to-blue-back {
+    100% {background-color: var(--color-background-long);}
+}
+@keyframes trans-to-blue-light-short-back {
+    100% {background-color: var(--color-light-long);}
+}
+@keyframes trans-to-blue-short-color-back {
+    100% {color: var(--color-light-long); }
+}
+@keyframes trans-to-blue-light-short {
+    100% { border-bottom-color: var(--color-light-long);}
+}
+@keyframes trans-to-blue-dark-short {
+    100% {background-color: var(--color-dark-long);}
 }
