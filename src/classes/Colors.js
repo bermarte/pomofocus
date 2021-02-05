@@ -1,5 +1,6 @@
 'use strict';
 
+
 //UI elements
 export class TransColor {
     constructor(color) {
@@ -8,7 +9,7 @@ export class TransColor {
 
     //change color to the UI
     render() {
-        console.log(this.color);
+        //console.log(this.color);
         //set animation at keyframe 0
   
         const par = '0.7s ease-in forwards';

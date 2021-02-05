@@ -1,4 +1,6 @@
-'use strict;'
+'use strict';
+
+import { CountDown } from '../classes/CountDown.js';
 
 let startSwitch = true;
 export function start(){
@@ -10,5 +12,8 @@ export function start(){
     }
     else{
         timeBtn.innerHTML = 'STOP';
+        //create counter object
+        const timer = new CountDown(localStorage.getItem('time'));
+        timer.render();
     }
 }

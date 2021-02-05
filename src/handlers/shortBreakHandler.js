@@ -7,6 +7,7 @@ export function shortBreak(){
     const shortColor = new TransColor('green');
     shortColor.render();
     //timer reset
-    let timeLabel = document.querySelector("#hour");
-    timeLabel.innerHTML = '05:00';
+    let time = document.querySelector("#hour");
+    time.innerHTML = '05:00';
+    localStorage.setItem("time",5);
 }

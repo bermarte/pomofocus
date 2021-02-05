@@ -9,4 +9,5 @@ export function pomBreak(){
     //timer reset
     let time = document.querySelector("#hour");
     time.innerHTML = '25:00';
+    localStorage.setItem("time",25);
 }
