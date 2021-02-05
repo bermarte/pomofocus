@@ -1,5 +1,9 @@
 'use strict';
 
+//sound library
+import '../../lib/soundmanager2-jsmin.js';
+import { pomBreak } from '../handlers/pomBreakHandler.js';
+
 export class CountDown {
     constructor(time){
         //if time is not set pomodoro break is the default one (25 min)
@@ -10,9 +14,22 @@ export class CountDown {
     render(){
         
         let counter = 0;
+
         //convert minutes to seconds
-        //let timeleft = this.time*60;
-        v
+        let timeleft = this.time*60;
+        //debug timer (set it to tue to debug it)
+        let debuggTimer = true;
+        if (debuggTimer){
+            timeleft = 0.1*60;
+        }
+
+        //play sound
+        function loadMp3(){
+            var mySound = soundManager.createSound({
+                url: '../../public/Ding-Sound-Effect.mp3'
+               });
+               mySound.play();
+        }
 
         function toMinutes(s){
             //remove decimal part
@@ -29,13 +46,20 @@ export class CountDown {
             return (d < 10) ? '0' + d.toString() : d.toString();
         }
 
+        let timeSpan = setInterval(count, 1000);
+
         function count() {
             counter++;
             let time = document.querySelector("#hour");
             time.innerText = toMinutes(timeleft - counter);
+            //check when is done
+            if (counter == timeleft){
+                loadMp3();
+                clearInterval(timeSpan);
+                //send to pomodoroBreak
+                pomBreak();
+            }
         }
-
-        setInterval(count, 1000);
 
     }
 }
