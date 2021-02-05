@@ -8,6 +8,7 @@
 import '../listeners/shortBreak.js';
 import '../listeners/pomodoroBreak.js';
 import '../listeners/longBreak.js';
+import '../listeners/startCounter.js';
 
 
 document.querySelector('#label-btn-pomodoro').style.backgroundColor = "#DF645F";
