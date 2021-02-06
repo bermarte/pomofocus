@@ -6,7 +6,9 @@ Goal of this project is to reverse engineer pomofocus.io, using classes , setTim
 [Backlog](https://github.com/bermarte/pomofocus/blob/master/project-planning/backlog.md)  
 [Development strategy](https://github.com/bermarte/pomofocus/blob/master/project-planning/development-strategy.md)
 
- <img src="./planning/wireframe.svg" alt="wireframe" width="800">
+<p align="center">
+  <img src="./planning/wireframe.png" alt="wireframe" width="400">
+</p>
 
 <details>
 <summary>FROM HYF</summary>
