@@ -3,11 +3,12 @@
 //sound library
 import '../../lib/soundmanager2-jsmin.js';
 import { pomBreak } from '../handlers/pomBreakHandler.js';
+import { start } from '../handlers/startCounterHandler.js';
 
 export class CountDown {
     constructor(time){
         //if time is not set pomodoro break is the default one (25 min)
-        if (time === null) time = 25;
+        if (time === null) time = 25*60;
         this.time = time;
     }
 
@@ -15,12 +16,13 @@ export class CountDown {
         
         let counter = 0;
 
-        //convert minutes to seconds
-        let timeleft = this.time*60;
-        //debug timer (set it to tue to debug it)
-        let debuggTimer = true;
+        let timeleft = this.time;
+        /*debug timer (set it to tue to run tests)
+        if set to true sets the time to 5 seconds
+        (so you don't wait to see wat happens)*/
+        let debuggTimer = false;
         if (debuggTimer){
-            timeleft = 0.1*60;
+            timeleft = 0.1*60;//5 seconds
         }
 
         //play sound
@@ -47,18 +49,31 @@ export class CountDown {
         }
 
         let timeSpan = setInterval(count, 1000);
+        
 
         function count() {
+
+            var pausable = sessionStorage.getItem("pausable");
+
             counter++;
             let time = document.querySelector("#hour");
             time.innerText = toMinutes(timeleft - counter);
             //check when is done
             if (counter == timeleft){
+                //delete session storage
+                sessionStorage.clear();
                 loadMp3();
                 clearInterval(timeSpan);
                 //send to pomodoroBreak
                 pomBreak();
+                //reset the text on the start button
+                start();
             }
+            if (pausable == 'true'){
+                //pause the count down
+                clearInterval(timeSpan);
+            }
+            
         }
 
     }

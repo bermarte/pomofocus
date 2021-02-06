@@ -9,9 +9,8 @@ export class TransColor {
 
     //change color to the UI
     render() {
-        //console.log(this.color);
+
         //set animation at keyframe 0
-  
         const par = '0.7s ease-in forwards';
         document.body.style.animation = `trans-to-${this.color}-back ${par}`;
         //#header div
@@ -25,7 +24,6 @@ export class TransColor {
         btns.forEach(element => {element.style.animation = `trans-to-${this.color}-light-short-back ${par}`});
         //big square in the middle
         const label = document.querySelector('#label');
-        //console.log(label);
         label.style.animation = `trans-to-${this.color}-light-short-back ${par}`;
         //start button
         const start = document.querySelector('#start');

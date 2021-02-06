@@ -9,5 +9,5 @@ export function longBreak(){
     //timer reset
     let time = document.querySelector("#hour");
     time.innerHTML = '15:00';
-    localStorage.setItem("time",15);
+    localStorage.setItem("time",15*60);
 }
