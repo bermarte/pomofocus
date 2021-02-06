@@ -1,5 +1,15 @@
-> ...
+## pomofocus
 
+Goal of this project is to reverse engineer pomofocus.io, using classes , setTimeOut and setInterval methods.
+
+ 
+[Backlog](https://github.com/bermarte/pomofocus/blob/master/project-planning/backlog.md)  
+[Development strategy](https://github.com/bermarte/pomofocus/blob/master/project-planning/development-strategy.md)
+
+ <img src="./planning/wireframe.svg" alt="wireframe" width="800">
+
+<details>
+<summary>FROM HYF</summary>
 ## Getting Started
 
 This repository comes with some nice extras like testing, documentation and CI, but in it's heart it's just an HTML/CSS/JS website boilerplate.
@@ -40,3 +50,4 @@ This repository comes with a GitHub Action to re-build the documentation and run
 Having this CI action means that your master branch will always have the most up-to-date documentation, and that you can easily check test results when reviewing Pull Requests.
 
 > ...
+</details>

@@ -5,28 +5,24 @@ A collection of user stories you can choose from. Stories inside of each priorit
 ## Must-Haves
 
 > these are necessary for basic usability
-
-- [ ] A user can create a new empty list with any title
-  - _acceptance criteria ..._
-- [ ] A user can remove any list from the manager
-  - _acceptance criteria ..._
-- [ ] A user can add items to each list instance
-  - _acceptance criteria ..._
-- [ ] A user can remove items from each list instance
-  - _acceptance criteria ..._
-- [ ] A user can update items in each list instance
-  - _acceptance criteria ..._
-
+- A user can start the pomodoro countdown
+- A user can start the short countdown
+- A user can start the long countdown
+- Color transition
+- Pause and restart countdown
 ## Should-Haves
 
 > these will complete the user experience, but are not necessary
-
-- [ ] A user can ...
-  - _acceptance criteria ..._
+- A user can create a new empty list with any title
+- A user can remove any list from the manager
+- A user can add items to each list instance
+- A user can update items in each list instance
 
 ## Could-Haves
 
 > would be really cool ... if there's time
 
-- [ ] A user can ...
-  - _acceptance criteria ..._
+- Complete all the functionalities on pomofocus.io
+- Store todo's in an object
+- Send remainder by mail
+- Make todo's persistent
