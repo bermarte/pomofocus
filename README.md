@@ -7,7 +7,7 @@ Goal of this project is to reverse engineer pomofocus.io, using classes , setTim
 [Development strategy](https://github.com/bermarte/pomofocus/blob/master/project-planning/development-strategy.md)
 
 <p align="center">
-  <img src="./planning/wireframe.png" alt="wireframe" width="400">
+  <img src="https://github.com/bermarte/pomofocus/blob/main/planning/wireframe.png" alt="wireframe" width="400">
 </p>
 
 <details>

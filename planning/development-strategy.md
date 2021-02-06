@@ -18,8 +18,9 @@ A refactor of the Practical JavaScript Todo List
 ## User Story Dependencies
 
 <p align="center">
-  <img src="./planning/case.svg" alt="diagram" width="400">
+  <img src="https://github.com/bermarte/pomofocus/blob/main/planning/case.svg" alt="diagram" width="400">
 </p>
+
 [Story Dependency Diagram](https://github.com/bermarte/pomofocus/tree/main/planning/case.svg)
 
 
@@ -27,8 +28,9 @@ A refactor of the Practical JavaScript Todo List
 
 ## WIREFRAME
 <p align="center">
-  <img src="./planning/wireframe.png" alt="wireframe" width="400">
+  <img src="https://github.com/bermarte/pomofocus/blob/main/planning/wireframe.png" alt="wireframe" width="400">
 </p>
+
 [wireframe](https://github.com/bermarte/pomofocus/tree/main/planning/wireframe.svg)
 
 ---
