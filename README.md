@@ -3,8 +3,9 @@
 Goal of this project is to reverse engineer pomofocus.io, using classes , setTimeOut and setInterval methods.
 
  
-[Backlog](https://github.com/bermarte/pomofocus/blob/master/project-planning/backlog.md)  
-[Development strategy](https://github.com/bermarte/pomofocus/blob/master/project-planning/development-strategy.md)
+[Backlog](https://github.com/bermarte/pomofocus/blob/main/planning/backlog.md) 
+
+[Development strategy](https://github.com/bermarte/pomofocus/blob/main/planning/development-strategy.md)
 
 <p align="center">
   <img src="https://github.com/bermarte/pomofocus/blob/main/planning/wireframe.png" alt="wireframe" width="400">
