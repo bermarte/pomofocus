@@ -77,6 +77,8 @@ export class TransColor {
             document.querySelectorAll('.label-btn').forEach(element => element.style.backgroundColor = lightColor);
             document.querySelector('#btn-task').style.backgroundColor = lightColor;
             document.querySelector('#add-task').style.backgroundColor = darkColor;
+            //set also the color for the start/stop button
+            document.querySelector('#start').style.color = lightColor;
         }
         
         setTimeout(setBackGround, 1000);
