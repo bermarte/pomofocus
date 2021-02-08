@@ -7,14 +7,16 @@ import { start } from '../handlers/startCounterHandler.js';
 
 export class CountDown {
     constructor(time){
-        //if time is not set pomodoro break is the default one (25 min)
+        //if time is not use pomodoro break as default one (25 min)
         if (time === null) time = 25*60;
         this.time = time;
     }
 
     render(){
         
+
         let counter = 0;
+        let timeSpan = setInterval(count, 1000);
 
         let timeleft = this.time;
         /*debug timer (set it to tue to run tests)
@@ -47,29 +49,31 @@ export class CountDown {
         function pad(d) {
             return (d < 10) ? '0' + d.toString() : d.toString();
         }
-
-        let timeSpan = setInterval(count, 1000);
         
-
         function count() {
 
-            var pausable = sessionStorage.getItem("pausable");
-
             counter++;
-            let time = document.querySelector("#hour");
-            time.innerText = toMinutes(timeleft - counter);
+            let timeDom = document.querySelector("#hour");
+            timeDom.innerText = toMinutes(timeleft - counter);
             //check when is done
             if (counter == timeleft){
-                //delete session storage
-                sessionStorage.clear();
                 loadMp3();
                 clearInterval(timeSpan);
-                //send to pomodoroBreak
+                //send it to pomodoroBreak
                 pomBreak();
                 //reset the text on the start button
                 start();
             }
-            if (pausable == 'true'){
+
+            if (window.reset){
+                console.log('window.reset',window.reset);
+                //reset the count down
+                clearInterval(timeSpan);
+                let timeDom = document.querySelector("#hour");
+                timeDom.innerHTML = window.timeDom;
+            }
+
+            if (window.pause === true){
                 //pause the count down
                 clearInterval(timeSpan);
             }
