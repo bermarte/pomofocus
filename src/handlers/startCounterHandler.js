@@ -1,6 +1,7 @@
 'use strict';
 
 import { CountDown } from '../classes/CountDown.js';
+import '../../lib/soundmanager2-jsmin.js';
 
 var startSwitch = true;
 
@@ -21,7 +22,8 @@ export function start() {
             console.log('start counter HANDLER - GOT PLAYING');
             window.pause = true;
             window.restart = true;
-        }     
+        }
+        loadMp3();   
         
     } else {
         timeBtn.innerHTML = 'STOP';
@@ -38,6 +40,15 @@ export function start() {
         timer = new CountDown(secLeft);
         timer.render();
         window.playing = true;
+        loadMp3(); 
 
     }
+}
+
+//play sound
+function loadMp3(){
+    var mySound = soundManager.createSound({
+        url: '../../public/button-press.mp3'
+       });
+       mySound.play();
 }
