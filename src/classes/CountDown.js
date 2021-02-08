@@ -3,7 +3,8 @@
 //sound library
 import '../../lib/soundmanager2-jsmin.js';
 import { pomBreak } from '../handlers/pomBreakHandler.js';
-import { start } from '../handlers/startCounterHandler.js';
+import { Ico } from './Ico.js';
+//import { start } from '../handlers/startCounterHandler.js';
 
 export class CountDown {
     constructor(time){
@@ -47,6 +48,8 @@ export class CountDown {
             counter++;
             let timeDom = document.querySelector("#hour");
             timeDom.innerText = toMinutes(timeleft - counter);
+            //update document title
+            document.title = `${timeDom.innerText} - Time for a break!`;
             //check when is done
             if (counter == timeleft){
                 loadMp3();
@@ -62,6 +65,11 @@ export class CountDown {
                 clearInterval(timeSpan);
                 let timeDom = document.querySelector("#hour");
                 timeDom.innerHTML = window.timeDom;
+                //update document title and ico
+                const ico = '../../public/imgs/pomo_favicon-16x16.png';
+                const setIco = new Ico(ico);
+                setIco.render();
+                document.title = `${timeDom.innerText} - Time to work!`;
             }
 
             if (window.pause === true){
