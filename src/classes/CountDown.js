@@ -4,7 +4,7 @@
 import '../../lib/soundmanager2-jsmin.js';
 import { pomBreak } from '../handlers/pomBreakHandler.js';
 import { Ico } from './Ico.js';
-//import { start } from '../handlers/startCounterHandler.js';
+
 
 export class CountDown {
     constructor(time){
@@ -16,6 +16,7 @@ export class CountDown {
     render(){
         
         let counter = 0;
+        var myWidth = 0;
         let timeSpan = setInterval(count, 1000);
 
         let timeleft = this.time;
@@ -46,10 +47,17 @@ export class CountDown {
         function count() {
 
             counter++;
+           
             let timeDom = document.querySelector("#hour");
             timeDom.innerText = toMinutes(timeleft - counter);
             //update document title
             document.title = `${timeDom.innerText} - Time for a break!`;
+
+            //update ruler bar
+            const percent = (counter/ timeleft)*100;
+            const pos = document.querySelector("#pos");
+            pos.setAttribute("style",`width:${percent}%`);
+
             //check when is done
             if (counter == timeleft){
                 loadMp3();
@@ -57,6 +65,8 @@ export class CountDown {
                 //send it to pomodoroBreak
                 pomBreak();
                 window.reset = true;
+                //fadeout the ruler
+                document.querySelector("#pos").style.animation = 'ruler-out 0.7s ease-in forwards';
             }
 
             if (window.reset){
