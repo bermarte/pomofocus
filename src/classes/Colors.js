@@ -9,13 +9,11 @@ export class TransColor {
 
     //change color to the UI
     render() {
+        
 
         //set animation at keyframe 0
         const par = '0.7s ease-in forwards';
         document.body.style.animation = `trans-to-${this.color}-back ${par}`;
-        //#header div
-        const header = document.querySelector('#header');
-        header.style.animation = `trans-to-${this.color}-back ${par}`;
         //buttons: report, settings and login
         const btn = document.querySelectorAll('.btn');
         btn.forEach(element => element.style.animation = `trans-to-${this.color}-light-short-back ${par}`);
@@ -34,6 +32,9 @@ export class TransColor {
         //add task button
         const addTask = document.querySelector('#add-task');
         addTask.style.animation = `trans-to-${this.color}-dark-short ${par}`;
+        //ruler background color
+        const ruler = document.querySelector('#ruler');
+        ruler.style.animation = `trans-to-${this.color}-dark-short ${par}`;
 
         this.assignColor(this.color);
     }
@@ -79,6 +80,8 @@ export class TransColor {
             document.querySelector('#add-task').style.backgroundColor = darkColor;
             //set also the color for the start/stop button
             document.querySelector('#start').style.color = lightColor;
+            //ruler's color
+            document.querySelector('#ruler').style.backgroundColor = darkColor;
         }
         
         setTimeout(setBackGround, 1000);

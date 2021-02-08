@@ -244,6 +244,11 @@ body {
     cursor: pointer;
     opacity: 0.7;
 }
+/* horizontal ruler */
+#ruler{
+    background-color:var(--color-dark-pom); 
+    height: 1px;
+}
 
 /*
 transitions-animations 
