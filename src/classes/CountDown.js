@@ -14,19 +14,11 @@ export class CountDown {
 
     render(){
         
-
         let counter = 0;
         let timeSpan = setInterval(count, 1000);
 
         let timeleft = this.time;
-        /*debug timer (set it to tue to run tests)
-        if set to true sets the time to 5 seconds
-        (so you don't wait to see wat happens)*/
-        let debuggTimer = false;
-        if (debuggTimer){
-            timeleft = 0.1*60;//5 seconds
-        }
-
+    
         //play sound
         function loadMp3(){
             var mySound = soundManager.createSound({
@@ -61,8 +53,7 @@ export class CountDown {
                 clearInterval(timeSpan);
                 //send it to pomodoroBreak
                 pomBreak();
-                //reset the text on the start button
-                start();
+                window.reset = true;
             }
 
             if (window.reset){
