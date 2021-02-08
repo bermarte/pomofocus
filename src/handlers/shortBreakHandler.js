@@ -5,7 +5,8 @@ import { Ico } from '../classes/Ico.js';
 
 export function shortBreak(){
 
-    const breakObj = new BreakClass('short break', 'green', '05:00');
+    //const breakObj = new BreakClass('short break', 'green', '05:00');
+    const breakObj = new BreakClass('short break', 'green', '00:05');
     breakObj.render();
 
     const ico = '../../public/imgs/short_favicon-16x16.png';
