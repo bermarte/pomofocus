@@ -100,17 +100,11 @@ and was merged into `main` once completed
 
 This user story is developed on branch `main`   
 
-## 7. documentation
-
-- As a user I want to read the documentation of the project
-
-
-This user story is developed on branch `main` 
-
 ## 8. debug and adding features
 
 - As a developer I need to fix few bugs
 - As a developer I want to add some extra features
 
 
-This user story is developed on branch `main` 
+This user story is developed on branch `fix_buttons`   
+and was merged into `main` once completed
