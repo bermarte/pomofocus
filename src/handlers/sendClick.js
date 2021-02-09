@@ -42,8 +42,10 @@ export function setColor(btn) {
         document.querySelector(element).style.backgroundColor = 'transparent';
         document.querySelector(element).style.fontWeight = 'normal';
     })
-}
 
-logger.push({
+};
+
+logger.add({
     handler: 'setColor'
-});
+})
+

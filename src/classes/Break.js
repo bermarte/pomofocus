@@ -54,6 +54,6 @@ export class BreakClass {
     }
 }
 
-logger.push({
+logger.add({
     class: 'BreakClass'
 });

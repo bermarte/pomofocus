@@ -91,6 +91,6 @@ export class TransColor {
     }
 }
 
-logger.push({
+logger.add({
     class: 'TransColor'
 });

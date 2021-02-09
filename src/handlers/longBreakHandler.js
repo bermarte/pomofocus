@@ -19,6 +19,6 @@ export function longBreak(){
 
 }
 
-logger.push({
+logger.add({
     handler: 'start'
 });

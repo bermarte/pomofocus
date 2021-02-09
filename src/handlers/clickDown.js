@@ -15,6 +15,6 @@ export function moveText(btn){
     property.style.top = "4px";
 }
 
-logger.push({
+logger.add({
     handler: 'moveText'
 });

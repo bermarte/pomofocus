@@ -19,6 +19,6 @@ export function pomBreak(){
     
 }
 
-logger.push({
+logger.add({
     handler: 'pomBreak'
 });

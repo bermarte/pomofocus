@@ -103,6 +103,6 @@ export class CountDown {
     }
 }
 
-logger.push({
+logger.add({
     class: 'CountDown'
 });

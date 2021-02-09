@@ -66,7 +66,7 @@ function loadMp3() {
     mySound.play();
 }
 
-logger.push({
+logger.add({
     handler: 'start',
     function: 'loadMp3'
 });

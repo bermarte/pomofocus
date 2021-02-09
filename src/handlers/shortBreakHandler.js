@@ -19,6 +19,6 @@ export function shortBreak(){
 
 }
 
-logger.push({
+logger.add({
     handler: 'shortBreak'
 });

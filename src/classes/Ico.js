@@ -23,6 +23,6 @@ export class Ico {
    }
 }
 
-logger.push({
+logger.add({
     class: 'Ico'
 });
