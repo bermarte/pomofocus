@@ -10,7 +10,7 @@ Goal of this project is to reverse engineer pomofocus.io, using classes , setTim
 [Documentation](https://github.com/bermarte/pomofocus/blob/main/DOCS.md)
 
 <p align="center">
-  <img src="https://github.com/bermarte/pomofocus/blob/main/public/imgs/screenshot.jpeg" alt="wireframe" width="400">
+  <img src="https://github.com/bermarte/pomofocus/blob/main/public/imgs/screenshot.jpeg" alt="wireframe" width="800">
 </p>
 
 ### to build the documentation:
