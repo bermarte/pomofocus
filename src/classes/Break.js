@@ -43,7 +43,3 @@ export class BreakClass {
         }
         }
     }
-
-    /*
-    const break = new Break('long break', 'blue', '15:00');
-    */

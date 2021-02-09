@@ -24,7 +24,7 @@ export class CountDown {
         //play sound
         function loadMp3(){
             var mySound = soundManager.createSound({
-                url: '../../public/Ding-Sound-Effect.mp3'
+                url: 'https://github.com/bermarte/pomofocus/blob/main/public/Ding-Sound-Effect.mp3'
                });
                mySound.play();
         }
@@ -76,7 +76,7 @@ export class CountDown {
                 let timeDom = document.querySelector("#hour");
                 timeDom.innerHTML = window.timeDom;
                 //update document title and ico
-                const ico = '../../public/imgs/pomo_favicon-16x16.png';
+                const ico = 'https://github.com/bermarte/pomofocus/blob/main/public/imgs/pomo_favicon-16x16.png';
                 const setIco = new Ico(ico);
                 setIco.render();
                 document.title = `${timeDom.innerText} - Time to work!`;
