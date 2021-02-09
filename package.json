@@ -1,5 +1,5 @@
 {
-  "name": "js-quiz-starter",
+  "name": "pomofocus",
   "version": "1.0.0",
   "scripts": {
     "document": "node ./lib/document.js",
@@ -9,14 +9,14 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hackyourfuturebelgium/js-quiz-starter.git"
+    "url": "git+https://github.com/bermarte/pomofocus"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hackyourfuturebelgium/js-quiz-starter/issues"
+    "url": "https://github.com/bermarte/pomofocus"
   },
-  "homepage": "https://github.com/hackyourfuturebelgium/js-quiz-starter",
+  "homepage": "https://github.com/bermarte/pomofocus",
   "devDependencies": {
     "jsdoc-to-markdown": "^6.0.1",
     "prettier": "^2.2.1",

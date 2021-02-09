@@ -12,7 +12,6 @@ export function pomBreak(){
     const breakObj = new BreakClass('pomo break', 'red', '25:00');
     breakObj.render();
 
-    
     const setIco = new Ico(ico);
     setIco.render();
     document.title = `25:00 - Time to work!`;
