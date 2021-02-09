@@ -76,7 +76,7 @@ export class CountDown {
                 let timeDom = document.querySelector("#hour");
                 timeDom.innerHTML = window.timeDom;
                 //update document title and ico
-                const ico = 'https://ghcdn.rawgit.org/bermarte/pomofocus/blob/main/public/imgs/pomo_favicon-16x16.png';
+                const ico = 'https://ghcdn.rawgit.org/bermarte/pomofocus/main/public/imgs/pomo_favicon-16x16.png';
                 const setIco = new Ico(ico);
                 setIco.render();
                 document.title = `${timeDom.innerText} - Time to work!`;
