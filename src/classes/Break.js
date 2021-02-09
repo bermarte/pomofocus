@@ -7,6 +7,13 @@ import {
     start
 } from '../handlers/startCounterHandler.js';
 
+/**
+ * controls the countdown (pomodoro, pause, reset)
+ * 
+ * @param  { string } myBreak - the break handler (pomodoro, short or long)
+ * @param  { string } color - the color  of the UI
+ * @param  { string } time - time on the UI
+ */
 export class BreakClass {
     constructor(myBreak, color, time) {
         this.myBreak = myBreak;

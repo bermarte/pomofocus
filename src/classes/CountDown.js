@@ -9,7 +9,11 @@ import {
     Ico
 } from './Ico.js';
 
-
+/**
+ * creates a countdown
+ * 
+ * @param  { number } time - the amount of seconds of a time interval
+ */
 export class CountDown {
     constructor(time) {
         //if time is not use pomodoro break as default one (25 min)

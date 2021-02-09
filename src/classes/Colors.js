@@ -2,6 +2,11 @@
 
 
 //UI elements
+/**
+ * change colors to the UI, adds animations/transition to the UI when changing color
+ * 
+ * @param  { string } color - a css value for a color
+ */
 export class TransColor {
     constructor(color) {
         this.color = color;

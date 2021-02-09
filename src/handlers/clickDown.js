@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * moves 4px down the css element
+ * 
+ * @param  { string} btn - a css selector
+ */
 //move the button while mousedown is true
 export function moveText(btn){
     const property = document.querySelector(btn);

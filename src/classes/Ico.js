@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ * creates a new icon
+ * 
+ * @param  { text } ico - a URL (an image)
+ */
 export class Ico {
     constructor(ico){
         this.ico = ico

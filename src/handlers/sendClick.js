@@ -12,7 +12,12 @@ let btnColors = {
     'label-btn-short': 'rgba(70, 142, 145, 0.0)',
     'label-btn-long': 'rgba(67, 126, 168, 0.0)'
 }
-
+/**
+ * sets the style for the 3 break-buttons (pomodoro, short and long)
+ * 
+ * @param  { string} btn - a css selector
+ * 
+ */
 export function setColor(btn) {
 
     //check which button is clicked to change the color accordingly

@@ -78,7 +78,7 @@ body {
 }
 
 .span-img {
-    width: 20px;
+    min-width: 20px;
     height: 20px;
     display: block;
     background-repeat: no-repeat;
@@ -213,7 +213,7 @@ body {
 }
 
 #btn-task {
-    width: 24px;
+    min-width: 24px;
     height: 24px;
     padding: 6px;
     background-image: url('./imgs/threedots-white.png');
@@ -405,3 +405,17 @@ keyframe 0 is assigned in assignColor(col)
         background-color: rgba(67, 126, 168, 1.0);
     }
 }
+
+/* media query */
+
+@media only screen and (max-width: 650px) {
+    #tasks-header {
+        padding: 0px 0px 0px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #label {
+        padding: 50px 98px 61px;
+    }
+  }

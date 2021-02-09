@@ -6,7 +6,9 @@ import {
 import '../../lib/soundmanager2-jsmin.js';
 
 var startSwitch = true;
-
+/**
+ * start/stop button toggle 
+ */
 export function start() {
 
     console.log('start counter HANDLER - START function');
@@ -52,7 +54,9 @@ export function start() {
 
     }
 }
-
+/**
+ * loads an audio file
+ */
 //play sound
 function loadMp3() {
     var mySound = soundManager.createSound({

@@ -3,6 +3,9 @@
 import { BreakClass } from '../classes/Break.js';
 import { Ico } from '../classes/Ico.js';
 
+/**
+ * handles a pomodoro break (25 minutes)
+ */
 export function pomBreak(){
 
     const breakObj = new BreakClass('pomo break', 'red', '25:00');
