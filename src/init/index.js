@@ -9,8 +9,7 @@ import '../listeners/shortBreak.js';
 import '../listeners/pomodoroBreak.js';
 import '../listeners/longBreak.js';
 import '../listeners/startCounter.js';
+import { Ico } from '../classes/Ico.js';
 
 //pomodoro is predefined
 document.querySelector('#label-btn-pomodoro').click();
-
-
