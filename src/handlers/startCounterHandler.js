@@ -48,7 +48,7 @@ export function start() {
 //play sound
 function loadMp3(){
     var mySound = soundManager.createSound({
-        url: 'https://github.com/bermarte/pomofocus/blob/main/public/button-press.mp3'
+        url: 'https://ghcdn.rawgit.org/bermarte/pomofocus/main/public/button-press.mp3'
        });
        mySound.play();
 }
