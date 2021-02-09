@@ -3,7 +3,6 @@
 import { BreakClass } from '../classes/Break.js';
 import { Ico } from '../classes/Ico.js';
 
-
 export function pomBreak(){
 
     const breakObj = new BreakClass('pomo break', 'red', '25:00');
