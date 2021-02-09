@@ -8,6 +8,8 @@ import {
 import {
     Ico
 } from './Ico.js';
+import { logger } from "../../lib/logger.js";
+
 
 /**
  * creates a countdown
@@ -100,3 +102,7 @@ export class CountDown {
 
     }
 }
+
+logger.push({
+    class: 'CountDown'
+});

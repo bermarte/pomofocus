@@ -1,5 +1,7 @@
 'use strict';
 
+import { logger } from "../../lib/logger.js";
+
 
 //UI elements
 /**
@@ -88,3 +90,7 @@ export class TransColor {
         setTimeout(setBackGround, 1000);
     }
 }
+
+logger.push({
+    class: 'TransColor'
+});

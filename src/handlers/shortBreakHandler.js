@@ -2,6 +2,7 @@
 
 import { BreakClass } from '../classes/Break.js';
 import { Ico } from '../classes/Ico.js';
+import { logger } from "../../lib/logger.js";
 
 /**
  * handles a pomodoro break (5 minutes)
@@ -17,3 +18,7 @@ export function shortBreak(){
     document.title = `05:00 - Time to work!`;
 
 }
+
+logger.push({
+    handler: 'shortBreak'
+});

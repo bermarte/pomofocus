@@ -4,6 +4,7 @@ import {
     CountDown
 } from '../classes/CountDown.js';
 import '../../lib/soundmanager2-jsmin.js';
+import { logger } from "../../lib/logger.js";
 
 var startSwitch = true;
 /**
@@ -64,3 +65,8 @@ function loadMp3() {
     });
     mySound.play();
 }
+
+logger.push({
+    handler: 'start',
+    function: 'loadMp3'
+});

@@ -1,4 +1,6 @@
 'use strict';
+import { logger } from "../../lib/logger.js";
+
 
 /**
  * moves 4px down the css element
@@ -12,3 +14,7 @@ export function moveText(btn){
     property.style.position = "relative";
     property.style.top = "4px";
 }
+
+logger.push({
+    handler: 'moveText'
+});

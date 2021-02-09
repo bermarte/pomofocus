@@ -6,6 +6,7 @@ import {
 import {
     start
 } from '../handlers/startCounterHandler.js';
+import { logger } from "../../lib/logger.js";
 
 /**
  * controls the countdown (pomodoro, pause, reset)
@@ -52,3 +53,7 @@ export class BreakClass {
         }
     }
 }
+
+logger.push({
+    class: 'BreakClass'
+});

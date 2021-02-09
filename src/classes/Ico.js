@@ -1,5 +1,7 @@
 'use strict';
 
+import { logger } from "../../lib/logger.js";
+
 /**
  * creates a new icon
  * 
@@ -20,3 +22,7 @@ export class Ico {
     link.href = this.ico;
    }
 }
+
+logger.push({
+    class: 'Ico'
+});
