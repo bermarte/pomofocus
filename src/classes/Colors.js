@@ -1,7 +1,14 @@
 'use strict';
 
+import { logger } from "../../lib/logger.js";
+
 
 //UI elements
+/**
+ * change colors to the UI, adds animations/transition to the UI when changing color
+ * 
+ * @param  { string } color - a css value for a color
+ */
 export class TransColor {
     constructor(color) {
         this.color = color;
@@ -83,3 +90,7 @@ export class TransColor {
         setTimeout(setBackGround, 1000);
     }
 }
+
+logger.push({
+    class: 'TransColor'
+});

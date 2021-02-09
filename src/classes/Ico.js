@@ -1,5 +1,12 @@
 'use strict';
 
+import { logger } from "../../lib/logger.js";
+
+/**
+ * creates a new icon
+ * 
+ * @param  { text } ico - a URL (an image)
+ */
 export class Ico {
     constructor(ico){
         this.ico = ico
@@ -15,3 +22,7 @@ export class Ico {
     link.href = this.ico;
    }
 }
+
+logger.push({
+    class: 'Ico'
+});

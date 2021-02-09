@@ -2,7 +2,11 @@
 
 import { BreakClass } from '../classes/Break.js';
 import { Ico } from '../classes/Ico.js';
+import { logger } from "../../lib/logger.js";
 
+/**
+ * handles a pomodoro break (25 minutes)
+ */
 export function pomBreak(){
 
     const breakObj = new BreakClass('pomo break', 'red', '25:00');
@@ -14,3 +18,7 @@ export function pomBreak(){
     document.title = `25:00 - Time to work!`;
     
 }
+
+logger.push({
+    handler: 'pomBreak'
+});
