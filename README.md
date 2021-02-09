@@ -1,15 +1,22 @@
 ## pomofocus
 
-Goal of this project is to reverse engineer pomofocus.io, using classes , setTimeOut and setInterval methods.
+Goal of this project is to reverse engineer pomofocus.io, using classes , setTimeOut and setInterval methods. Only part of the original site has been implemented. Some of the buttons are inactive. 
 
  
 [Backlog](https://github.com/bermarte/pomofocus/blob/main/planning/backlog.md) 
 
-[Development strategy](https://github.com/bermarte/pomofocus/blob/main/planning/development-strategy.md)
+[Development strategy](https://github.com/bermarte/pomofocus/blob/main/planning/development-strategy.md)  
+
+[Documentation](https://github.com/bermarte/pomofocus/blob/main/DOCS.md)
 
 <p align="center">
-  <img src="https://github.com/bermarte/pomofocus/blob/main/planning/wireframe.png" alt="wireframe" width="400">
+  <img src="https://github.com/bermarte/pomofocus/blob/main/public/imgs/screenshot.jpeg" alt="wireframe" width="400">
 </p>
+
+### to build the documentation:
+- `npm install`
+- `node ./lib/document.js`
+
 
 <details>
 <summary>FROM HYF</summary>
