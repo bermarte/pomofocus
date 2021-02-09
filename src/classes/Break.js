@@ -7,8 +7,6 @@ import {
     start
 } from '../handlers/startCounterHandler.js';
 
-
-
 export class BreakClass {
     constructor(myBreak, color, time) {
         this.myBreak = myBreak;
@@ -16,6 +14,7 @@ export class BreakClass {
         this.time = time;
     }
     render() {
+        
         console.log(`${this.myBreak} HANDLER`);
         const transColor = new TransColor(this.color);
         transColor.render();
@@ -23,7 +22,9 @@ export class BreakClass {
         let timeDom = document.querySelector("#hour");
         timeDom.innerHTML = this.time;
         const timeBtn = document.querySelector('#start');
+
         if (timeBtn.innerHTML == 'STOP') {
+
             console.log(`${this.myBreak} HANDLER - timeBtn.innerHTML == STOP`);
 
             window.reset = true;
@@ -34,6 +35,7 @@ export class BreakClass {
 
         }
         if (timeBtn.innerHTML == 'START') {
+
             console.log(`${this.myBreak} HANDLER - timeBtn.innerHTML == START`);
             window.reset = true;
             window.pause = false;
@@ -41,9 +43,5 @@ export class BreakClass {
             window.timeDom = timeDom.innerHTML;
 
         }
-        }
     }
-
-    /*
-    const break = new Break('long break', 'blue', '15:00');
-    */
+}

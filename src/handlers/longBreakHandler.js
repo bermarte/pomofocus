@@ -8,7 +8,7 @@ export function longBreak(){
     const breakObj = new BreakClass('long break', 'blue', '15:00');
     breakObj.render();
     
-    const ico = '../../public/imgs/long_favicon-16x16.png';
+    const ico = 'https://ghcdn.rawgit.org/bermarte/pomofocus/main/public/imgs/long_favicon-16x16.png';
     const setIco = new Ico(ico);
     setIco.render();
     document.title = `15:00 - Time to work!`;

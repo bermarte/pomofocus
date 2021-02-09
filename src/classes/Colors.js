@@ -9,7 +9,6 @@ export class TransColor {
 
     //change color to the UI
     render() {
-        
 
         //set animation at keyframe 0
         const par = '0.7s ease-in forwards';
@@ -17,9 +16,6 @@ export class TransColor {
         //buttons: report, settings and login
         const btn = document.querySelectorAll('.btn');
         btn.forEach(element => element.style.animation = `trans-to-${this.color}-light-short-back ${par}`);
-        //all the 3 buttons
-        const btns = document.querySelectorAll('.label-btn');
-        btns.forEach(element => {element.style.animation = `trans-to-${this.color}-light-short-back ${par}`});
         //big square in the middle
         const label = document.querySelector('#label');
         label.style.animation = `trans-to-${this.color}-light-short-back ${par}`;
@@ -39,23 +35,23 @@ export class TransColor {
         this.assignColor(this.color);
     }
 
-    //assign color for transition (KEYFRAME 0)
-    assignColor(col){
+    //assign color for transitions (~KEYFRAME 0)
+    assignColor(col) {
 
         let back, light, dark;
-        if (col === 'green'){
+        if (col === 'green') {
             back = '--color-background-short';
             light = '--color-light-short';
             dark = '--color-dark-short';
             console.log('back green');
         }
-        if (col === 'red'){
+        if (col === 'red') {
             back = '--color-background-pom';
             light = '--color-light-pom';
             dark = '--color-dark-pom';
             console.log('back red');
         }
-        if (col === 'blue'){
+        if (col === 'blue') {
             back = '--color-background-long';
             light = '--color-light-long';
             dark = '--color-dark-long';
@@ -63,19 +59,19 @@ export class TransColor {
         }
 
         const backColor = getComputedStyle(document.documentElement)
-                          .getPropertyValue(back);
+            .getPropertyValue(back);
 
         const lightColor = getComputedStyle(document.documentElement)
-                          .getPropertyValue(light);
+            .getPropertyValue(light);
 
         const darkColor = getComputedStyle(document.documentElement)
-                          .getPropertyValue(dark);
+            .getPropertyValue(dark);
 
-        function setBackGround(){
+        //setting colors (needed when starting CSS animations ~KEYFRAME 0)
+        function setBackGround() {
             document.body.style.backgroundColor = backColor;
             this.label.style.backgroundColor = lightColor;
             document.querySelectorAll('.btn').forEach(element => element.style.backgroundColor = lightColor);
-            document.querySelectorAll('.label-btn').forEach(element => element.style.backgroundColor = lightColor);
             document.querySelector('#btn-task').style.backgroundColor = lightColor;
             document.querySelector('#add-task').style.backgroundColor = darkColor;
             //set also the color for the start/stop button
@@ -83,7 +79,7 @@ export class TransColor {
             //ruler's color
             document.querySelector('#ruler').style.backgroundColor = darkColor;
         }
-        
+
         setTimeout(setBackGround, 1000);
     }
 }
