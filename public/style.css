@@ -130,12 +130,12 @@ body {
     background-color: var(--color-light-pom);
     /* #DF645F;*/
     border-radius: 12px;
-    height: 331px;
+    height: 314px;
 }
 
 #hour {
     padding-top: 40px;
-    height: 200px;
+    height: 178px;
     font-size: 120px;
     font-family: WolfSansRegular;
 }
