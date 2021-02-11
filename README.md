@@ -61,3 +61,8 @@ Having this CI action means that your master branch will always have the most up
 
 > ...
 </details>
+### example
+[Example](https://bermarte.github.io/pomofocus/tutorial/) built  combining 2 tutorials:
+- https://freshman.tech/pomodoro-timer/
+- https://www.youtube.com/watch?v=Ttf3CEsEwMQ
+
