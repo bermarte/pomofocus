@@ -5,10 +5,10 @@ This example is made combining 2 tutorials:
 
 [live demo](https://bermarte.github.io/pomofocus/tutorial/index.html)
 
----
-
 What follows is the README's text of the pomodoro timer.
 The original repository is available on https://github.com/Freshman-tech/pomodoro-starter-files
+
+---
 
 # Pomodoro Timer Starter files
 
