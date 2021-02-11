@@ -3,6 +3,10 @@ This example is made combining 2 tutorials:
 - https://freshman.tech/pomodoro-timer/
 - https://www.youtube.com/watch?v=Ttf3CEsEwMQ
 
+[live demo](https://bermarte.github.io/pomofocus/tutorial/index.html)
+
+---
+
 What follows is the README's text of the pomodoro timer.
 The original repository is available on https://github.com/Freshman-tech/pomodoro-starter-files
 
